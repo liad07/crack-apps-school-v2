@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100"
+        style="border:1px solid #d3d3d3;">
+    Your browser does not support the canvas element.
+</canvas>
+<input type="text"  placeholder="Email or user" id="username2">
+<input type="submit" onclick="show_user()">
+<script>
+    function show_user() {
+
+        var user = document.getElementById("username2").value;
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.font = "30px Arial";
+        user="hello "+user;
+        ctx.fillText(user,10,50);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="he" >
+<head>
+    <meta charset="utf-8">
+        <title>Crack Apps-gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="Images/favicon.ico">
+    <head>
+        <title>Crack Apps-gallery</title>
+        <link rel="stylesheet" href="Styles.css">
+</head>
+<body onload="currentSlide(1)" id="colo">
+<div class="topnav">
+    <a href="Home.html">Home</a>
+    <a href="Registration.html">Registration</a>
+    <a href="CreateContentItem.html">CreateContentItem</a>
+    <a href="SharedContent.html">SharedContent</a>
+    <a  class="active" href="gallery.html">gallery</a>
+    <a href="About.html">About</a>
+    <input type="color" class="topnav-right" id="color" value="#111111">
+    <label for="click" class="click-me topnav-right">Login </label>
+
+    <img id="img" class="topnav-right" onClick="rotateImg()" src="Images/favicon.ico" height="55" width="55" />
+
+
+</div>
+<div class="topnav-right">
+
+    <input type="checkbox" id="click">
+
+    <div class="content popup">
+        <div class="text">
+            LOGIN
+        </div>
+
+        <form>
+            <label  for="username">Username</label>
+
+            <input type="text" placeholder="Email or user" id="username">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+
+            <button>Log In</button>
+            <button><a href="Registration.html">Create a new user</a></button>
+
+        </form>
+
+
+
+    </div>
+</div>
+<h1 class="center">our chanels</h1>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img class="galimg" src="Images/11.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img class="galimg" src="Images/12.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img class="galimg"  src="Images/13.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img class="galimg" src="Images/14.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
