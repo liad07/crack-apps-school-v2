@@ -24,7 +24,7 @@
             style="border:1px solid #000000;">
         Your browser does not support the canvas element.
     </canvas>
-    <input type="color" class="topnav-right" id="color" value="#111111">
+    <input type="color" class="topnav-right" id="color" value="#ffffff">
 
     <label for="click" class="click-me topnav-right">Login </label>
 
@@ -66,25 +66,26 @@
     <div class="form">
     <form>
     <b>first name:</b>
-    <input type="text" name="fname" size="8"><br>
+    <input type="text" id="fname" size="8"><br>
 </br>
     <b>last name:</b>
-    <input type="text" name="lname" size="8"><br>
+    <input type="text" id="lname" size="8"><br>
 </br>
     <b>username:</b>
        <input type="text"  placeholder="user" id="username2">
 </br>
         <b>password:</b>
-        <input type="password" name="new_pswd" size="20"><br>
-    </br>
+        <input type="password" id="password2" size="20"><br>
+        <input type="checkbox" onclick="showpass()">Show Password
+
+        </br>
         <b>email address:</b>
-        <input type="email" placeholder="example@gmail.com">
+        <input type="email" placeholder="example@gmail.com" id="email">
+
         <br>
     </br>
         <b>Date of birth:</b>
-        <input type="datetime-local" id="meeting-time"
-               name="meeting-time" value="2000-00-00T00:0"
-               min="2000-00-00T00:00" max="2122-06-14T00:00"><br>
+        <input type="datetime-local" id="date"><br>
         </br>
         <b>gender:</b><br>
         <input type="radio" name="gender" value="male">male<br>
@@ -98,7 +99,7 @@
             <option value="outofisrael">חו"ל
         </select><br>
     </br><div class="center">
-        <input type="submit" onclick="show_user();return false">
+        <input type="submit" onclick="is_valid();return false">
 
             <input type="reset" onclick="reset()">
        </div>
